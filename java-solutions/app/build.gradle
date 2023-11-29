@@ -23,6 +23,7 @@ dependencies {
 
     // This dependency is used by the application.
     implementation 'com.google.guava:guava:32.1.1-jre'
+
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
@@ -37,7 +38,12 @@ application {
     mainClass = 'solutions.App'
 }
 
-tasks.named('test') {
+tasks.named('test', Test) {
+
+    testLogging {
+        showStandardStreams = true
+    }
+
     // Use JUnit Platform for unit tests.
     useJUnitPlatform()
 }
