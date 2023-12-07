@@ -1,10 +1,15 @@
 package solutions.validparentheses;
 
 /**
- * problem 20 - valid parentheses
- * status: solved, beats 98.68% in runtime, beat 41.94% in memory
- *
+ * ----
+ * problem: 20 - valid parentheses
+ * status: completed, beats 98.68% in runtime, beat 41.94% in memory
  * 
+ * notes: after submitting my version, I checked submissions of other people and
+ * found that an implementation using a stack would be a lot easier and more
+ * efficient
+ * 
+ * ----
  * Given a string s containing just the characters '(', ')', '{', '}', '[' and
  * ']', determine if the input string is valid.
  * 

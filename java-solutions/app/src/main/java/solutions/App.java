@@ -3,12 +3,27 @@
  */
 package solutions;
 
+import solutions.mergetwosortedlists.ListNode;
+import solutions.mergetwosortedlists.MergeTwoSortedLists;
+
 public class App {
-    public String getGreeting() {
-        return "Hello Solutions!";
-    }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+//        MergeTwoSortedLists mergeTwoSortedLists = new MergeTwoSortedLists();
+//        ListNode one = new ListNode(1);
+//        one.next = new ListNode(2);
+//        one.next.next = new ListNode(4);
+//        ListNode two = new ListNode(1);
+//        two.next = new ListNode(3);
+//        two.next.next = new ListNode(4);
+//        ListNode result = mergeTwoSortedLists.mergeTwoLists(one, two);
+//        ListNode.printList(result);
+
+
+        MergeTwoSortedLists mergeTwoSortedLists = new MergeTwoSortedLists();
+        ListNode one = new ListNode(2);
+        ListNode two = new ListNode(1);
+        ListNode result = mergeTwoSortedLists.mergeTwoLists(one, two);
+        ListNode.printList(result);
     }
 }
