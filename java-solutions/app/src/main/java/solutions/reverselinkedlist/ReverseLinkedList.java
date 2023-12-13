@@ -3,7 +3,7 @@ package solutions.reverselinkedlist;
 /**
  * ----
  * problem: 206 - Reverse linked list
- * status: active
+ * status: completed - iteratively, not recursive
  * notes:
  * ----
  * Given the head of a singly linked list, reverse the list, and return the reversed list.
