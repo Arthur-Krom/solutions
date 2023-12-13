@@ -1,4 +1,4 @@
-package solutions.mergetwosortedlists;
+package solutions.reverselinkedlist;
 
 public class ListNode {
     public int val;

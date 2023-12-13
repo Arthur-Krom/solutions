@@ -3,27 +3,22 @@
  */
 package solutions;
 
-import solutions.mergetwosortedlists.ListNode;
-import solutions.mergetwosortedlists.MergeTwoSortedLists;
+
+import solutions.reverselinkedlist.ListNode;
+import solutions.reverselinkedlist.ReverseLinkedList;
 
 public class App {
 
     public static void main(String[] args) {
-//        MergeTwoSortedLists mergeTwoSortedLists = new MergeTwoSortedLists();
-//        ListNode one = new ListNode(1);
-//        one.next = new ListNode(2);
-//        one.next.next = new ListNode(4);
-//        ListNode two = new ListNode(1);
-//        two.next = new ListNode(3);
-//        two.next.next = new ListNode(4);
-//        ListNode result = mergeTwoSortedLists.mergeTwoLists(one, two);
-//        ListNode.printList(result);
+        ReverseLinkedList reverseLinkedList = new ReverseLinkedList();
 
+        ListNode one = new ListNode(1,
+                new ListNode(2,
+                        new ListNode(3,
+                                new ListNode(4,
+                                        new ListNode(5, null)))));
 
-        MergeTwoSortedLists mergeTwoSortedLists = new MergeTwoSortedLists();
-        ListNode one = new ListNode(2);
-        ListNode two = new ListNode(1);
-        ListNode result = mergeTwoSortedLists.mergeTwoLists(one, two);
+        ListNode result = reverseLinkedList.reverseList(one);
         ListNode.printList(result);
     }
 }
